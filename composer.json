@@ -1,0 +1,22 @@
+{
+    "name": "worksection/xmltoarray",
+    "description": "XML to Array parser",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Vadym Dorokh",
+            "email": "vadymski@gmail.com",
+            "role": "Distributor"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "php": ">=7.0.0",
+        "ext-xml": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Worksection\\": "src/"
+        }
+    }
+}
