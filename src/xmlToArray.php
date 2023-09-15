@@ -97,7 +97,9 @@ class xmlToArray
 		}
 		elseif (isset($this->pointer[$tag]))
 		{
-			$idx = count($this->pointer[$tag]);
+			if (is_array($this->pointer[$tag])) {
+				$idx = count($this->pointer[$tag]);
+			}
 			if (!isset($this->pointer[$tag][0]))
 			{
 				foreach ($this->pointer[$tag] as $key => $value)
